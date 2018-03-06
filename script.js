@@ -3,4 +3,3 @@ window.onscroll = function() {
     parall.style.marginTop=scrolled*0.001111+"px";
     block.style.marginTop="-"+scrolled*0.5+"px";
 }
-
