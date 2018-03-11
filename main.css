@@ -36,7 +36,7 @@
 
 .t_otherworks {
     text-align: center;
-    color: #c3f111;
+    color: #c7d883;
     font-size: 60pt;
     margin-top: -300px;
 }
@@ -60,10 +60,9 @@
 
 .t_akcii_callme {
     text-align: center;
-    color: #c3f111;
+    color: #c7d883;
     font-size: 55pt;
     margin-top: -345px;
-    margin-right: 28%;
 }
 .zamer {
     background: url(images/metal-ruler-2765212.jpg)  no-repeat;
@@ -84,7 +83,7 @@
 
 .t_zamer {
     text-align: center;
-    color: #c3f111;
+    color: #c7d883;
     font-size: 60pt;
     margin-top: -330px;
 }
@@ -131,5 +130,5 @@
     color: #006680;
     font-size: 26pt;
     margin-top: 2%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
