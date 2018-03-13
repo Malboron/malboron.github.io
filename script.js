@@ -1,9 +1,19 @@
 window.onscroll = function() {
     var scrolled = window.pageYOffset;
-    parall.style.marginTop=scrolled*0.000001111+"px";
-    block.style.marginTop="-"+scrolled*0.5+"px";
+    parall.style.backgroundPosition="0px "+scrolled+"px";
+    block.style.backgroundPosition="0px "+"-"+scrolled+"px";
+}
+
+var winwid=document.documentElement.clientWidth;
+
+window.onload =function(){
+    if(winwid<1000)
+    {
+        document.getElementById('textheader').style.display="none";
+        document.getElementById('zakazat_zvonok').style.marginLeft="33%";
+    }
 }
 
 zvonok = function(){
-   alert("Спасибо!"); 
+   alert("В разработке..."); 
 }
