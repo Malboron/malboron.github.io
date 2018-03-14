@@ -1,5 +1,5 @@
 *{
-    font-family: Lucida console;
+    font-family: 'Comfortaa', cursive;
 }
 
 a { 
@@ -152,6 +152,7 @@ a {
     background-color: #caffed;
     width: 200px;
     height: 30px;
+    font-size: 20pt;
 }
 
 .butt_2 {
@@ -172,4 +173,16 @@ a {
 }
 .margin_2 {
     margin-top: -128px;
+}
+
+.callback {
+    width: 120px;
+    height: 50px; 
+    margin-left: 5%;
+    border: 2px solid gray;
+    background-color: azure;
+    border-radius: 10px;
+    font-size: 16pt;
+    text-align: center;
+    margin-top: 2%;
 }
