@@ -10,10 +10,11 @@ window.onload =function(){
     if(winwid<1000)
     {
         document.getElementById('textheader').style.display="none";
-        document.getElementById('zakazat_zvonok').style.marginLeft="33%";
+        document.getElementById('callb').style.marginLeft="40%";
     }
 }
 
 zvonok = function(){
    alert("В разработке..."); 
 }
+

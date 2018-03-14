@@ -6,7 +6,7 @@ a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
    }
 .parallax {
-    background: url(images/fon3.png)  no-repeat;
+    background: url(images/fon8.png)  no-repeat;
     width: 100%;
     height: 500px;
     background-size: 100%;
@@ -178,11 +178,11 @@ a {
 .callback {
     width: 120px;
     height: 50px; 
-    margin-left: 5%;
     border: 2px solid gray;
     background-color: azure;
     border-radius: 10px;
     font-size: 16pt;
     text-align: center;
     margin-top: 2%;
+    margin-left: 1%;
 }
