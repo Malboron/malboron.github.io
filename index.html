@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <title>Монтаж Мастер</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
@@ -18,6 +19,13 @@
         </div>
         <div class="callback" id="callb">Заказать звонок</div>
     </div>
+    <script>
+    if(winwid<1000)
+    {
+        document.getElementById('textheader').style.display="none";
+        document.getElementById('callb').style.marginLeft="40%";
+    }
+    </script>
     <div id="parall" class="parallax"></div> 
     <div id="block" class="block">
         <div class="otherworks">

@@ -7,11 +7,7 @@ window.onscroll = function() {
 var winwid=document.documentElement.clientWidth;
 
 window.onload =function(){
-    if(winwid<1000)
-    {
-        document.getElementById('textheader').style.display="none";
-        document.getElementById('callb').style.marginLeft="40%";
-    }
+    
 }
 
 zvonok = function(){
