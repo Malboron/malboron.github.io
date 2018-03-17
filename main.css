@@ -1,190 +1,71 @@
-*{
-    font-family: 'Comfortaa', cursive;
-}
-body{
-    overflow-x: hidden;
-}
-a { 
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
-   }
-.parallax {
-    background: url(images/fon3.jpg)  no-repeat;
+
+.yafon {
+    background: transparent url("images/day-bg2.png") -10% 0 repeat-x;
     width: 100%;
-    height: 500px;
-    background-size: 100%;
+    height: 600px;
+    position: absolute;
+}
+
+.yafon2 {
     
-    z-index: 50;
-    background-position:0px 8px;
-}
-
-.block {
     width: 100%;
-    height: auto;
-    z-index: 100;
-    background-color: azure;
+    height: 600px;    
 }
 
-.otherworks {
-    background: url(images/valkenburg-272472.jpg)  no-repeat;
-    width: 99.3%;
-    height: 400px;
-    background-size: 100%;
-    background-position: bottom;
-    border: 5px solid #6d77a5;
-    z-index: 100;
-}
-
-.bc_otherworks {
-    background-color: #395165ba;
+.yafon3 {
+    background: transparent url("images/day-bg3.png") 300% 0 repeat-x;
     width: 100%;
-    height: 100%;
-    z-index: 150;
-    margin-top: 128px;
-}
-
-.t_otherworks {
-    text-align: center;
-    color: #c7d883;
-    font-size: 60pt;
-    margin-top: -300px;
-}
-
-.callme {
-    background: url(images/support-1120755_1920.jpg)  no-repeat;
-    width: 99.3%;
-    height: 400px;
-    background-size: 100%;
-    background-position: bottom;
-    border: 5px solid #6d77a5;
-    z-index: 100;
-}
-
-.bc_callme {
-    background-color: #395165ba;
-    width: 100%;
-    height: 100%;
-    z-index: 150;
-    margin-top: 128px;
-}
-
-.t_akcii_callme {
-    text-align: center;
-    color: #c7d883;
-    font-size: 55pt;
-    margin-top: -345px;
-}
-.zamer {
-    background: url(images/metal-ruler-2765212.jpg)  no-repeat;
-    width: 99.3%;
-    height: 400px;
-    background-size: 100%;
-    background-position: bottom;
-    border: 5px solid #6d77a5;
-    z-index: 100;
-}
-
-.bc_zamer {
-    background-color: #395165ba;
-    width: 100%;
-    height: 100%;
-    z-index: 150;
-    margin-top: 128px;
-}
-
-.t_zamer {
-    text-align: center;
-    color: #c7d883;
-    font-size: 60pt;
-    margin-top: -330px;
-}
-
-.ya_map {
-    width: 99.3%;
-    height: 400px;
-    background-size: 100%;
-    background-position: bottom;
-    border: 5px solid #6d77a5;
-    z-index: 100;
-}
-
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: aquamarine;
-    width: 99%;
-    border: 7px solid #6d77a5;
-    text-align: center;
-    font-size: 18pt;
-    color: #006680;
-}
-
-.hline {
-    display: flex;
-}
-
-.header {
-    position: fixed;
-    background-color: aquamarine;
-    width: 99.3%;
-    height: 113px;
-    border: 5px solid #6d77a5;
-    display: flex;
-}
-
-.t_footer {
-    margin-top:1.5%;
-}
-
-.margin_1 {
-    margin-top: -128px;
-}
-
-.t_header {
-    text-align: center;
-    color: #006680;
-    font-size: 22pt;
-    margin-top: 3%;
-    margin-left: 10px;
-    display: flex;
-}
-
-.butt_1 {
-    border: 2px solid gray;
-    border-radius: 10px;
-    background-color: #caffed;
-    width: 200px;
-    height: 30px;
-    font-size: 20pt;
-}
-
-.butt_2 {
-    border: 2px solid gray;
-    border-radius: 10px;
-    background-color: #caffed;
-    width: 200px;
-    height: 30px;
-    margin-left: 1%;
-}
-.butt_3 {
-    border: 2px solid gray;
-    border-radius: 10px;
-    background-color: #caffed;
-    width: 200px;
-    height: 30px;
-     margin-left: 1%;
-}
-.margin_2 {
-    margin-top: -128px;
+    height: 600px;  
 }
 
 .callback {
-    width: 120px;
-    height: 50px; 
-    border: 2px solid gray;
-    background-color: azure;
-    border-radius: 10px;
-    font-size: 16pt;
-    text-align: center;
-    margin-top: 2%;
-    margin-left: 1%;
+    width: 200px;
+    height: 250px;
+    background: white;
+    margin-top: 100px;
+    margin-left: -200px;
+    position: absolute;
+}
+
+.tel {
+    background: url(images/tel.png) no-repeat;
+    margin-top: 50px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    
+}
+
+#block3d {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    margin: auto;
+    font-size: 20pt;
+}
+
+#telshadow {
+    margin: 3px;
+    width: 28px;
+    height: 28px;
+    border-radius: 16px;
+    background-color: #77889994;
+    visibility: hidden;
+    transition: 1s ease-out 0s;
+}
+
+.t_callback {
+    font-size: 60pt;
+    transform: rotate(90deg);
+    margin-top:50px;
+    width: 200px;
+    height: 159px;
+    background-image: url(images/Trollface.jpg) ;
+}
+
+.donttouch {
+    margin-top: 390px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
 }
