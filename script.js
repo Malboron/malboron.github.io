@@ -10,7 +10,7 @@ window.onload =function(){
     
 }
 
-callb.click = function(){
+callb.onclick = function(){
    alert("В разработке..."); 
 }
 
