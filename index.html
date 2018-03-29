@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="main.css">
     <link rel="SHORTCUT ICON" href="images/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Oswald" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body style="margin: 0px;">
     <div class="header">
         <img src="images/LogoMM6test.png" style="width: auto; height: 113px; margin-left: 4%">
         <div class="t_header" id="textheader">
-            <div class="butt_1"><a href="#1">Конструкции</a></div>
-            <div class="butt_2"><a href="#2">Акции</a></div>
-            <div class="butt_3"><a href="#3">Замер</a></div>
+            <div id="b1" class="butt_1"><a >Конструкции</a></div>
+            <div id="b2" class="butt_2"><a >Акции</a></div>
+            <div id="b3" class="butt_3"><a >Замер</a></div>
         </div>
         <div class="callback" id="callb">Заказать звонок</div>
     </div>
     <script>
+    var winwid=document.documentElement.clientWidth;
     if(winwid<1000)
     {
         document.getElementById('textheader').style.display="none";
@@ -54,5 +54,7 @@
             </div>
         </div>   
     </div>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body> 
 </html>
