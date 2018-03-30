@@ -33,3 +33,28 @@ $(document).ready(function(){
         }, 500 );
     });
 });
+
+window.onload = function(){
+    var winwid=document.documentElement.clientWidth;
+    if(winwid<1200)
+        {
+            document.getElementById('textheader').style.display="none";
+            document.getElementById('callb').style.marginLeft="40%";
+
+        }
+    
+    }
+    window.onresize = function(){
+    var winwid=document.documentElement.clientWidth;
+    if(winwid<1200)
+        {
+            document.getElementById('textheader').style.display="none";
+            document.getElementById('callb').style.marginLeft="40%";
+        }
+        else{
+            document.getElementById('textheader').style.display="block";
+            document.getElementById('textheader').style.display="flex";
+            document.getElementById('callb').style.marginLeft="3%";
+        }
+    
+    }
