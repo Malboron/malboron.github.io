@@ -5,7 +5,7 @@ body{
     overflow-x: hidden;
 }
 a { 
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    text-decoration: none;
    }
 .parallax {
     background: url(images/fon3.jpg)  no-repeat;
@@ -26,7 +26,7 @@ a {
 
 .otherworks {
     background: url(images/valkenburg-272472.jpg)  no-repeat;
-    width: 99.3%;
+    width: 100%;
     height: 400px;
     background-size: 100%;
     background-position: bottom;
@@ -51,7 +51,7 @@ a {
 
 .callme {
     background: url(images/support-1120755_1920.jpg)  no-repeat;
-    width: 99.3%;
+    width: 100%;
     height: 400px;
     background-size: 100%;
     background-position: bottom;
@@ -75,7 +75,7 @@ a {
 }
 .zamer {
     background: url(images/metal-ruler-2765212.jpg)  no-repeat;
-    width: 99.3%;
+    width: 100%;
     height: 400px;
     background-size: 100%;
     background-position: bottom;
@@ -95,12 +95,12 @@ a {
     text-align: center;
     color: #c7d883;
     font-size: 60pt;
-    margin-top: -330px;
+    margin-top: -350px;
 }
 
 .ya_map {
-    width: 99.3%;
-    height: 400px;
+    width: 100%;
+    height: 405px;
     background-size: 100%;
     background-position: bottom;
     border: 5px solid #6d77a5;
@@ -109,9 +109,8 @@ a {
 
 .footer {
     width: 100%;
-    height: 100px;
+    height: 113px;
     background-color: aquamarine;
-    width: 99%;
     border: 7px solid #6d77a5;
     text-align: center;
     font-size: 18pt;
@@ -125,9 +124,8 @@ a {
 .header {
     position: fixed;
     background-color: aquamarine;
-    width: 99.3%;
     height: 113px;
-    border: 5px solid #6d77a5;
+    width: 100%;
     display: flex;
 }
 
@@ -144,7 +142,7 @@ a {
     color: #006680;
     font-size: 22pt;
     margin-top: 3%;
-    margin-left: 10%;
+    margin-left: 3%;
     display: flex;
 }
 
@@ -153,7 +151,7 @@ a {
     border-radius: 10px;
     background-color: #caffed;
     width: 200px;
-    height: 30px;
+    height: 40px;
     font-size: 20pt;
     cursor: pointer;
 }
@@ -163,7 +161,7 @@ a {
     border-radius: 10px;
     background-color: #caffed;
     width: 200px;
-    height: 30px;
+    height: 40px;
     margin-left: 1%;
     cursor: pointer;
 }
@@ -172,7 +170,7 @@ a {
     border-radius: 10px;
     background-color: #caffed;
     width: 200px;
-    height: 30px;
+    height: 40px;
     margin-left: 1%;
     cursor: pointer;
 }
@@ -182,13 +180,16 @@ a {
 
 .callback {
     width: 120px;
-    height: 50px; 
+    height: 60px; 
     border: 2px solid gray;
     background-color: azure;
     border-radius: 10px;
     font-size: 16pt;
     text-align: center;
     margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 3%;
     cursor: pointer;
+}
+.wrapper1 {
+    display: flex;
 }

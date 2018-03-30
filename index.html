@@ -6,24 +6,37 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <link rel="SHORTCUT ICON" href="images/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Oswald" rel="stylesheet">
 </head>
 <body style="margin: 0px;">
     <div class="header">
-        <img src="images/LogoMM6test.png" style="width: auto; height: 113px; margin-left: 4%">
-        <div class="t_header" id="textheader">
-            <div id="b1" class="butt_1"><a >Конструкции</a></div>
-            <div id="b2" class="butt_2"><a >Акции</a></div>
-            <div id="b3" class="butt_3"><a >Замер</a></div>
+        <div class="container">
+            <div class="wrapper1">
+                <img src="images/LogoMM6test.png" style="width: auto; height: 113px;">
+                <div class="t_header" id="textheader">
+                    <div id="b1" class="butt_1"><a >Конструкции</a></div>
+                    <div id="b2" class="butt_2"><a >Акции</a></div>
+                    <div id="b3" class="butt_3"><a >Замер</a></div>
+                </div>
+                <div id="callb" class="callback">Заказать звонок</div>
+            </div>
         </div>
-        <div id="callb" class="callback">Заказать звонок</div>
     </div>
     <script>
+    window.onresize = function(){
     var winwid=document.documentElement.clientWidth;
-    if(winwid<1000)
-    {
-        document.getElementById('textheader').style.display="none";
-        document.getElementById('callb').style.marginLeft="40%";
+    if(winwid<1200)
+        {
+            document.getElementById('textheader').style.display="none";
+            document.getElementById('callb').style.marginLeft="40%";
+        }
+        else{
+            document.getElementById('textheader').style.display="block";
+            document.getElementById('textheader').style.display="flex";
+            document.getElementById('callb').style.marginLeft="3%";
+        }
+    
     }
     </script>
     <div id="parall" class="parallax"></div> 

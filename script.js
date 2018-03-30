@@ -17,19 +17,19 @@ callb.onclick = function(){
 $(document).ready(function(){
     $("#b1").click(function(){
         $("html").animate({
-        scrollTop: "400px"
+        scrollTop: "387px"
         }, 500 );
     });
     
     $("#b2").click(function(){
         $("html").animate({
-        scrollTop: "800px"
+        scrollTop: "787px"
         }, 500 );
     });
     
     $("#b3").click(function(){
         $("html").animate({
-        scrollTop: "1200px"
+        scrollTop: "1187px"
         }, 500 );
     });
 });
