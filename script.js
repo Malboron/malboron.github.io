@@ -107,13 +107,11 @@ $(document).ready(function(){
             var scrolled = window.pageYOffset;
             
                 if((window.pageYOffset)>100){
-                    console.log(scrolled+"kek")
                     $('.gotop').show(300);
                     $('.gotop').css('visibility','visible')
                 }
             
                 else{
-                    console.log(scrolled+"lol");
                     $('.gotop').hide(300);
                 }
             if((window.pageYOffset)<387){
