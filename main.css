@@ -120,6 +120,8 @@ a {
     text-align: center;
     font-size: 18pt;
     color: #006680;
+    z-index: 10000;
+    position: relative;
 }
 
 .hline {
@@ -210,4 +212,17 @@ a {
     margin-left: 30%;
     margin-top: 200px;
     z-index: 100;
+}
+
+.gotop {
+    width: 60px;
+    height: 70px;
+    color: rebeccapurple;
+    position: fixed;
+    margin-left: 2.5%;
+    margin-top: 400px;
+    z-index: 1000;
+    visibility: hidden;
+    font-size: 80pt;
+    cursor: pointer;
 }

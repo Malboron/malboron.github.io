@@ -6,9 +6,7 @@ window.onscroll = function() {
 
 
 
-window.onload =function(){
-    
-}
+
 
 callb.onclick = function(){
    alert("В разработке..."); 
@@ -33,6 +31,9 @@ window.onload = function(){
             document.getElementById('wind').style.marginLeft="20%";
         }
         else{
+            
+            
+            
             document.getElementById('textheader').style.display="block";
             document.getElementById('textheader').style.display="flex";
             document.getElementById('callb').style.marginLeft="3%";
@@ -46,7 +47,7 @@ window.onload = function(){
     {
         document.getElementById('wind').style.marginLeft="30%";
     }
-    }
+}
     testbutton.onclick = function(){
         document.getElementById('textheader').style.display="block";
         document.getElementById('textheader').style.display="flex";
@@ -62,6 +63,7 @@ window.onload = function(){
             document.getElementById('wind').style.marginLeft="20%";
         }
         else{
+            
             document.getElementById('textheader').style.display="block";
             document.getElementById('textheader').style.display="flex";
             document.getElementById('callb').style.marginLeft="3%";
@@ -100,34 +102,50 @@ $(document).ready(function(){
         scrollTop: "1157px"
         }, 500 );
     });
-    
-    $(window).scroll(function(){
-        if((window.pageYOffset)<387){
+        
+        $(window).scroll(function(){
             var scrolled = window.pageYOffset;
-            console.log(scrolled);
-            $('.otherworks').css('position',"relative");
-            $('.callme').css('position',"relative");
-            $('.otherworks').css('marginTop',"0px");
-            $('.callme').css('marginTop',"0px");
-        }
-        if(((window.pageYOffset)>387)&((window.pageYOffset)<387*2)){
-            var scrolled = window.pageYOffset;
-            console.log(scrolled);
-            $('.otherworks').css('position',"fixed");
-            $('.otherworks').css('marginTop',"-387px");
-            $('.callme').css('position',"relative");
-            $('.callme').css('marginTop',"387px");
-            $('.zamer').css('marginTop',"0px");
-        }
-        if((window.pageYOffset)>=387*2){
-            var scrolled = window.pageYOffset;
-            console.log(scrolled);
-            $('.callme').css('position',"fixed");
-            $('.callme').css('marginTop',"-387px");
-            $('.zamer').css('marginTop',"774px");
-        }
-    })
-    
+            
+                if((window.pageYOffset)>100){
+                    console.log(scrolled+"kek")
+                    $('.gotop').show(300);
+                    $('.gotop').css('visibility','visible')
+                }
+            
+                else{
+                    console.log(scrolled+"lol");
+                    $('.gotop').hide(300);
+                }
+            if((window.pageYOffset)<387){
+                var scrolled = window.pageYOffset;
+                
+                $('.otherworks').css('position',"relative");
+                $('.callme').css('position',"relative");
+                $('.otherworks').css('marginTop',"0px");
+                $('.callme').css('marginTop',"0px");
+            }
+            if(((window.pageYOffset)>387)&((window.pageYOffset)<387*2)){
+                var scrolled = window.pageYOffset;
+                
+                $('.otherworks').css('position',"fixed");
+                $('.otherworks').css('marginTop',"-387px");
+                $('.callme').css('position',"relative");
+                $('.callme').css('marginTop',"387px");
+                $('.zamer').css('marginTop',"0px");
+            }
+            if((window.pageYOffset)>=387*2){
+                var scrolled = window.pageYOffset;
+                
+                $('.callme').css('position',"fixed");
+                $('.callme').css('marginTop',"-387px");
+                $('.zamer').css('marginTop',"774px");
+            }
+        })
+     $('.gotop').click(function(){
+         $('body,html').animate({
+             scrollTop:0
+         },2500);
+     })
     
 });
 
