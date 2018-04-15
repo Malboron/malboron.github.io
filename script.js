@@ -1,7 +1,7 @@
 
 window.onscroll = function() {
     var scrolled = window.pageYOffset;
-    parall.style.backgroundPosition="0px "+-scrolled/7+"px";
+    parall.style.backgroundPosition="0px "+scrolled+"px";
 }
 
 
@@ -99,7 +99,7 @@ $(document).ready(function(){
     
     $("#b3").click(function(){
         $("html").animate({
-        scrollTop: "1157px"
+        scrollTop: "1161px"
         }, 500 );
     });
         
@@ -118,15 +118,19 @@ $(document).ready(function(){
                 }
             if((window.pageYOffset)<387){
                 var scrolled = window.pageYOffset;
-                
+                $("#b1").css('backgroundColor','#caffed');
+        $("#b2").css('backgroundColor','#caffed');
+        $("#b3").css('backgroundColor','#caffed');
                 $('.otherworks').css('position',"relative");
                 $('.callme').css('position',"relative");
                 $('.otherworks').css('marginTop',"0px");
                 $('.callme').css('marginTop',"0px");
             }
-            if(((window.pageYOffset)>387)&((window.pageYOffset)<387*2)){
+            if(((window.pageYOffset)>=387)&((window.pageYOffset)<387*2)){
                 var scrolled = window.pageYOffset;
-                
+                $("#b1").css('backgroundColor','#a0dcc8');
+        $("#b2").css('backgroundColor','#caffed');
+        $("#b3").css('backgroundColor','#caffed');
                 $('.otherworks').css('position',"fixed");
                 $('.otherworks').css('marginTop',"-387px");
                 $('.callme').css('position',"relative");
@@ -135,10 +139,17 @@ $(document).ready(function(){
             }
             if((window.pageYOffset)>=387*2){
                 var scrolled = window.pageYOffset;
-                
+                $("#b2").css('backgroundColor','#a0dcc8');
+        $("#b1").css('backgroundColor','#caffed');
+        $("#b3").css('backgroundColor','#caffed');
                 $('.callme').css('position',"fixed");
                 $('.callme').css('marginTop',"-387px");
                 $('.zamer').css('marginTop',"774px");
+            }
+            if((window.pageYOffset)>=387*3){
+                $("#b3").css('backgroundColor','#a0dcc8');
+        $("#b2").css('backgroundColor','#caffed');
+        $("#b1").css('backgroundColor','#caffed');
             }
         })
      $('.gotop').click(function(){
@@ -146,7 +157,4 @@ $(document).ready(function(){
              scrollTop:0
          },2500);
      })
-    
 });
-
-//parall.style.backgroundPosition="0px "+-scrolled/7+"px";
