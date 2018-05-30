@@ -10,6 +10,32 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Oswald" rel="stylesheet">
 </head>
 <body style="margin: 0px;">
+  <div class="callb_wind_bg"></div>
+   <div class="callb_wind">
+       <div class="close_wind">X</div>
+       <div class="left_of_post">
+       <form method="post" action="mail.php">
+           <div class="user_contacts">
+              <label for="name">Имя:</label>
+              <input style="margin-left: 10%" maxlength="25" type="text" name="name" />
+                <br>
+              <label for="phone">Телефон:</label>
+              <input maxlength="25" type="text" name="phone" />
+                <br>
+              <label for="mail">E-mail:</label>
+              <input style="margin-left: 5%" maxlength="25" type="text" name="mail" />
+                <br>
+                <br>
+            </div>
+              <label for="message">Сообщение:</label>
+              <textarea rows="5" cols="40" name="message"></textarea>
+            
+            <div class="margin_submit">
+              <input type="submit" value="Отправить" />
+            </div>
+        </form>
+        </div>
+   </div>
     <div class="header">
         <div class="container">
             <div class="wrapper1">
@@ -57,5 +83,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    
 </body> 
 </html>

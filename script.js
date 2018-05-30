@@ -4,18 +4,6 @@ window.onscroll = function() {
     parall.style.backgroundPosition="0px "+scrolled+"px";
 }
 
-
-
-
-
-callb.onclick = function(){
-   alert("В разработке..."); 
-}
-
-
-
-
-
 window.onload = function(){
     var winwid=document.documentElement.clientWidth;
     if(winwid<1200)
@@ -31,13 +19,9 @@ window.onload = function(){
             document.getElementById('wind').style.marginLeft="20%";
         }
         else{
-            
-            
-            
             document.getElementById('textheader').style.display="block";
             document.getElementById('textheader').style.display="flex";
             document.getElementById('callb').style.marginLeft="3%";
-            
         }
     if(winwid>=1900)
     {
@@ -155,4 +139,23 @@ $(document).ready(function(){
              scrollTop:0
          },2500);
      })
+    
+    $("#callb").click(function(){
+        $(".callb_wind_bg").css( "display", "block" );
+        $(".callb_wind").css('transform','scale(1,1)');
+        $('body,html').css( "overflow", "hidden" );
+    });
+    
+    $(".callb_wind_bg").click(function(){
+        $(".callb_wind_bg").css( "display", "none" );
+        $(".callb_wind").css('transform','scale(0,0)');
+        $('body,html').css( "overflow", "visible" );
+    });
+    
+    $(".close_wind").click(function(){
+        $(".callb_wind_bg").css( "display", "none" );
+        $(".callb_wind").css('transform','scale(0,0)');
+        $('body,html').css( "overflow", "visible" );
+    });
+    
 });
