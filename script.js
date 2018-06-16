@@ -1,7 +1,7 @@
-
+ $('body,html').css( "overflow", "hidden" );
 window.onload = function(){
- document.getElementById('loading').style.display="none";   
- document.getElementById('load_bg').style.display="none";   
+ $('body,html').css( "overflow", "visible" );
+document.getElementById('load_bg').style.display="none";   
 window.onscroll = function() {
     var scrolled = window.pageYOffset;
     parall.style.backgroundPosition="0px "+scrolled+"px";
@@ -26,14 +26,7 @@ window.onscroll = function() {
             document.getElementById('textheader').style.display="flex";
             document.getElementById('callb').style.marginLeft="3%";
         }
-    if(winwid>=1900)
-    {
-        document.getElementById('wind').style.marginLeft="35%";
-    }
-    if((winwid>1200)&&(winwid<1900))
-    {
-        document.getElementById('wind').style.marginLeft="30%";
-    }
+
 
     testbutton.onclick = function(){
         document.getElementById('textheader').style.display="block";
@@ -47,7 +40,7 @@ window.onscroll = function() {
         {
             document.getElementById('textheader').style.display="none";
             document.getElementById('callb').style.marginLeft="40%";
-            document.getElementById('wind').style.marginLeft="20%";
+
         }
         else{
             
@@ -56,14 +49,7 @@ window.onscroll = function() {
             document.getElementById('callb').style.marginLeft="3%";
             
         }
-    if(winwid>=1900)
-    {
-        document.getElementById('wind').style.marginLeft="35%";
-    }
-    if((winwid>1200)&&(winwid<1900))
-    {
-        document.getElementById('wind').style.marginLeft="30%";
-    }
+
     }
     testbutton.onclick = function(){
         document.getElementById('textheader').style.display="block";
