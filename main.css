@@ -285,7 +285,8 @@ a {
 
 .load_info {
     font-size: 22pt;
-    margin-left: 5.5%;
+    margin-left: 15%;
     margin-top: 500px;
     position: absolute;
+    text-align: center;
 }
