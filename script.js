@@ -1,10 +1,13 @@
 
+window.onload = function(){
+ document.getElementById('loading').style.display="none";   
+ document.getElementById('load_bg').style.display="none";   
 window.onscroll = function() {
     var scrolled = window.pageYOffset;
     parall.style.backgroundPosition="0px "+scrolled+"px";
 }
 
-window.onload = function(){
+
     var winwid=document.documentElement.clientWidth;
     if(winwid<1200)
         {
@@ -31,7 +34,7 @@ window.onload = function(){
     {
         document.getElementById('wind').style.marginLeft="30%";
     }
-}
+
     testbutton.onclick = function(){
         document.getElementById('textheader').style.display="block";
         document.getElementById('textheader').style.display="flex";
@@ -159,3 +162,4 @@ $(document).ready(function(){
     });
     
 });
+}
