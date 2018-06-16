@@ -282,3 +282,10 @@ a {
     margin-top: 300px;
     position: absolute;
 }
+
+.load_info {
+    font-size: 22pt;
+    margin-left: 21%;
+    margin-top: 500px;
+    position: absolute;
+}
