@@ -272,6 +272,10 @@ a {
     height: 2000px;
     background-color: aqua;
     display: block;
+    transition: all 0.5s ease-out 0s;
+    opacity: 1;
+    position: absolute;
+    z-index: 1000000;
 }
 
 .loading {
