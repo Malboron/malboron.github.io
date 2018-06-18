@@ -2,6 +2,10 @@
 window.onload = function(){
     $('body,html').css( "overflow", "visible" );
     document.getElementById('load_bg').style.opacity="0";
+    offloadscreen = function(){
+        document.getElementById('load_bg').style.display="none";
+    }
+    setTimeout(offloadscreen, 500);
     window.onscroll = function() 
     {
         var scrolled = window.pageYOffset;
