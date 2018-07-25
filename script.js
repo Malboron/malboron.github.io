@@ -1,4 +1,5 @@
- $('body,html').css( "overflow", "hidden" );
+$(window).scrollTop(0); 
+$('body,html').css( "overflow", "hidden" );
 window.onload = function(){
     $('body,html').css( "overflow", "visible" );
     document.getElementById('load_bg').style.opacity="0";
@@ -16,17 +17,20 @@ window.onload = function(){
         {
             document.getElementById('textheader').style.display="none";
             document.getElementById('callb').style.marginLeft="40%";
+            callb_wind.style.marginLeft="10%";
         }
     if(winwid<1200)
         {
             document.getElementById('textheader').style.display="none";
             document.getElementById('callb').style.marginLeft="40%";
             document.getElementById('wind').style.marginLeft="20%";
+            callb_wind.style.marginLeft="10%";
         }
         else{
             document.getElementById('textheader').style.display="block";
             document.getElementById('textheader').style.display="flex";
             document.getElementById('callb').style.marginLeft="3%";
+            callb_wind.style.marginLeft="29%";
         }
     testbutton.onclick = function(){
         document.getElementById('textheader').style.display="block";
