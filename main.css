@@ -227,13 +227,16 @@ a {
     width: 620px;
     height: 620px;
     background-color: aquamarine;
-    position: fixed;
-    margin-left: 29%;
-    margin-top: 7%;
     z-index: 5000;
     transform: scale(0, 0);
     transition: all 0.5s ease-out 0s;
     text-align: center;
+    
+    position:fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .callb_wind_bg {
@@ -257,9 +260,7 @@ a {
     cursor: pointer;
 }
 
-.left_of_post {
-    margin-left: 3%;
-}
+
 
 
 

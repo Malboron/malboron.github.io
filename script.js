@@ -23,7 +23,6 @@ window.onload = function(){
         {
             document.getElementById('textheader').style.display="none";
             document.getElementById('callb').style.marginLeft="40%";
-            document.getElementById('wind').style.marginLeft="20%";
             callb_wind.style.marginLeft="10%";
         }
         else{
