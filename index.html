@@ -1,86 +1,118 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
+
 <head>
-    <title>Монтаж Мастер</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <link rel="SHORTCUT ICON" href="images/ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Oswald" rel="stylesheet">
+  <meta charset="utf-8">
+
+  <title>Pressure Scale</title>
+  <meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no">
+  <meta name="description" content="Weigh small objects using your 3D touch enabled iPhone!">
+  <meta name="author" content="Tarun Pemmaraju">
+  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="icon.png" />
+  <!-- icon from http://www.flaticon.com/free-icon/food-scale-tool_45327 -->
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      -webkit-user-select: none;
+      font-family: -apple-system;
+    }
+    
+    #forcearea {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #e3e3e3;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 24px;
+    }
+    
+    #forcearea p {
+      margin: 0;
+    }
+    
+    #forcearea span {
+      font-size: 12px;
+    }
+    
+    #guide {
+      margin: 200px auto;
+      width: 220px;
+      padding: 20px;
+      border: 1px dashed #c3c3c3;
+    }
+  </style>
 </head>
-<body style="margin: 0px;">
-<div class="load_bg" id="load_bg">
-    <div class="load_info">
-        <img src="images/loading.gif">
-        <br>
-        <br>Сайт загружается,
-        <br>пожалуйста, подождите...
+
+<body>
+  <div id="forcearea">
+    <p id="forceAmount">0.00 grams</p>
+    <div id="buttonarea">
+      <button id="tareButton">Tare</button>
     </div>
-</div>
-  <div class="callb_wind_bg"></div>
-   <div class="callb_wind" id="callb_wind">
-       <div class="close_wind">X</div>
-       <form method="post" action="mail.php">
-           <div class="user_contacts">
-              <label style="font-size: 22pt; text-align: center; margin-top:-20px;" for="name">Имя:</label><br>
-              <input class="call_back_inputs" maxlength="25" type="text" name="name" />
-                <br>
-              <label style="font-size: 22pt; text-align: center;" for="phone">Телефон:</label><br>
-              <input class="call_back_inputs" maxlength="25" type="text" name="phone" />
-                <br>
-              <label style="font-size: 22pt; text-align: center;" for="mail">E-mail:</label><br>
-              <input class="call_back_inputs" maxlength="25" type="text" name="mail" />
-                <br>
-            </div>
-              <label style="font-size: 22pt; text-align: center;" for="message">Сообщение:</label><br>
-              <textarea class="call_back_message" rows="3" cols="20" name="message"></textarea>
-              <input style="width: 200px; height: 80px;" type="submit" value="Отправить"/>
-        </form>
-   </div>
-    <div class="header">
-        <div class="container">
-            <div class="wrapper1">
-                <img src="images/LogoMM6test.png" style="width: auto; height: 113px;">
-                <div class="t_header" id="textheader">
-                    <div id="b1" class="butt_1"><a >Конструкции</a></div>
-                    <div id="b2" class="butt_2"><a >Акции</a></div>
-                    <div id="b3" class="butt_3"><a >Замер</a></div>
-                </div>
-                <div id="callb" class="callback">Заказать звонок</div>
-                <div id="testbutton"></div>
-            </div>
-        </div>
+    <div id="guide">
+      Place object here
     </div>
-    <div class="gotop">^</div>
-    <div id="parall" class="parallax">
-        <div class="window"><img src="images/3.png"></div> 
-    </div> 
-        <div class="otherworks">
-            <div class="margin_1" id="1"></div>
-            <div class="bc_otherworks"></div>
-            <div class="t_otherworks">Любые конструкции<br>Любой сложности</div>
-        </div>
-        <div class="callme">
-            <div class="margin_1" id="2"></div>
-            <div class="bc_callme"></div>
-            <div class="t_akcii_callme">Акции и предложения<br>по телефону<br>8(983)177-87-77</div> 
-        </div>
-        <div class="zamer">
-            <div class="margin_1" id="3"></div>
-            <div class="bc_zamer"></div>
-            <div class="t_zamer">Замеры по Барнаулу и Алтайскому краю БЕСПЛАТНО!</div> 
-        </div> 
-        <div class="ya_map">
-            <div class="bc_ya_map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A709558744afc58ffdb009e7cbb2a470f9eae9aa6b866293e357294f324d15ae1&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe></div>
-            <div class="t_ya_map"></div> 
-        </div>
-        <div class="footer">
-            <div class="t_footer">
-                <b>Адрес: г.Барнаул ул.Попова 1Б</b><br>
-                <b>Контактный телефон менеджера: 8(983)177-87-77</b><br>
-            </div>
-        </div>   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>   
-</body> 
+  </div>
+
+  <script>
+    // based on https://github.com/freinbichler/3d-touch
+    var touchElement = document.getElementById('forcearea');
+    var forceTextElement = document.getElementById('forceAmount');
+    var forceValue = 0;
+    var tareValue = 0;
+    function onTouchStartMove(e) {
+      e.preventDefault();
+      checkForce(e);
+    }
+    function onTouchEnd(e) {
+      e.preventDefault();
+      touch = null;
+    }
+    function checkForce(e) {
+      if (e.target.id == "buttonarea" || e.target.id == "tareButton") {
+        tare();
+      } else {
+        touch = e.touches[0];
+        setTimeout(refreshforceValue.bind(touch), 10);
+      }
+    }
+    function checkMacForce(e) {
+      // max value for trackpad is 3.0 compare to 1.0 on iOS
+      forceValue = e.webkitForce / 3;
+      forceTextElement.innerHTML = ((forceValue - tareValue) * 1000).toFixed(2) + " <br><span style=\"color:red\">Uncalibrated for Mac, press \"t\" to tare.</span>";
+    }
+    function refreshforceValue() {
+      var touchEvent = this;
+      forceValue = 0;
+      if (touchEvent) {
+        forceValue = touchEvent.force || 0;
+        setTimeout(refreshforceValue.bind(touch), 10);
+      }
+      //Remove the tareValue from the returned value
+      forceTextElement.innerHTML = ((forceValue - tareValue) * 385).toFixed(2) + " grams";
+    }
+    function keypress(e) {
+      if (e.keyCode == 116) {
+        tare();
+      }
+    }
+    function tare() {
+      tareValue = forceValue;
+    }
+    (function() {
+      touchElement.addEventListener('touchstart', onTouchStartMove, false);
+      touchElement.addEventListener('touchmove', onTouchStartMove, false);
+      touchElement.addEventListener('touchend', onTouchEnd, false);
+      touchElement.addEventListener('webkitmouseforcewillbegin', checkMacForce, false);
+      touchElement.addEventListener('webkitmouseforcechanged', checkMacForce, false);
+      document.addEventListener('keypress', keypress, false)
+    })();
+  </script>
+</body>
+
 </html>
