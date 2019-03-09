@@ -82,9 +82,9 @@ window.onload = function(){
                 }
             if((window.pageYOffset)<387){
                 var scrolled = window.pageYOffset;
-                $("#b1").css('backgroundColor','#caffed');
-        $("#b2").css('backgroundColor','#caffed');
-        $("#b3").css('backgroundColor','#caffed');
+                $("#b1").css('backgroundColor','rgb(165, 223, 239)');
+        $("#b2").css('backgroundColor','rgb(165, 223, 239)');
+        $("#b3").css('backgroundColor','rgb(165, 223, 239)');
                 $('.otherworks').css('position',"relative");
                 $('.callme').css('position',"relative");
                 $('.otherworks').css('marginTop',"0px");
@@ -92,9 +92,9 @@ window.onload = function(){
             }
             if(((window.pageYOffset)>=387)&((window.pageYOffset)<387*2)){
                 var scrolled = window.pageYOffset;
-                $("#b1").css('backgroundColor','#a0dcc8');
-        $("#b2").css('backgroundColor','#caffed');
-        $("#b3").css('backgroundColor','#caffed');
+                $("#b1").css('backgroundColor','rgb(97, 182, 236)');
+        $("#b2").css('backgroundColor','rgb(165, 223, 239)');
+        $("#b3").css('backgroundColor','rgb(165, 223, 239)');
                 $('.otherworks').css('position',"fixed");
                 $('.otherworks').css('marginTop',"-387px");
                 $('.callme').css('position',"relative");
@@ -103,17 +103,17 @@ window.onload = function(){
             }
             if((window.pageYOffset)>=387*2){
                 var scrolled = window.pageYOffset;
-                $("#b2").css('backgroundColor','#a0dcc8');
-        $("#b1").css('backgroundColor','#caffed');
-        $("#b3").css('backgroundColor','#caffed');
+                $("#b2").css('backgroundColor','rgb(97, 182, 236)');
+        $("#b1").css('backgroundColor','rgb(165, 223, 239)');
+        $("#b3").css('backgroundColor','rgb(165, 223, 239)');
                 $('.callme').css('position',"fixed");
                 $('.callme').css('marginTop',"-387px");
                 $('.zamer').css('marginTop',"774px");
             }
             if((window.pageYOffset)>=387*3){
-                $("#b3").css('backgroundColor','#a0dcc8');
-        $("#b2").css('backgroundColor','#caffed');
-        $("#b1").css('backgroundColor','#caffed');
+                $("#b3").css('backgroundColor','rgb(97, 182, 236)');
+        $("#b2").css('backgroundColor','rgb(165, 223, 239)');
+        $("#b1").css('backgroundColor','rgb(165, 223, 239)');
             }
         })
      $('.gotop').click(function(){

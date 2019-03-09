@@ -28,8 +28,9 @@ a {
     width: 100%;
     height: 400px;
     background-size: 100%;
-    border: 5px solid #6d77a5;
+    border: 5px solid #3c4159;
     z-index: 100;
+    text-shadow: black 0 0 10px;
 }
 
 .bc_otherworks {
@@ -42,9 +43,10 @@ a {
 
 .t_otherworks {
     text-align: center;
-    color: #c7d883;
+    color: #7dc2d1;
     font-size: 60pt;
     margin-top: -300px;
+    text-shadow: black 0 0 10px;
 }
 
 .callme {
@@ -53,7 +55,7 @@ a {
     height: 400px;
     background-size: 100%;
     background-position: bottom;
-    border: 5px solid #6d77a5;
+    border: 5px solid #3c4159;
     z-index: 150;
     position: relative;
     background-color: white;
@@ -69,9 +71,10 @@ a {
 
 .t_akcii_callme {
     text-align: center;
-    color: #c7d883;
+    color: #7dc2d1;
     font-size: 55pt;
     margin-top: -345px;
+    text-shadow: black 0 0 10px;
 }
 .zamer {
     background: url(images/metal-ruler-2765212.jpg)  no-repeat;
@@ -79,7 +82,7 @@ a {
     height: 400px;
     background-size: 100%;
     background-position: bottom;
-    border: 5px solid #6d77a5;
+    border: 5px solid #3c4159;
     z-index: 200;
     position: relative;
 }
@@ -94,9 +97,10 @@ a {
 
 .t_zamer {
     text-align: center;
-    color: #c7d883;
+    color: #7dc2d1;
     font-size: 60pt;
     margin-top: -350px;
+    text-shadow: black 0 0 10px;
 }
 
 .ya_map {
@@ -104,7 +108,7 @@ a {
     height: auto;
     background-size: 100%;
     background-position: bottom;
-    border: 5px solid #6d77a5;
+    border: 5px solid #3c4159;
     z-index: 500;
     position: relative;
 }
@@ -112,11 +116,11 @@ a {
 .footer {
     width: 100%;
     height: 113px;
-    background-color: aquamarine;
-    border: 7px solid #6d77a5;
+    background-color: #212121;
+    border: 7px solid #3c4159;
     text-align: center;
     font-size: 18pt;
-    color: #006680;
+    color: #8a8a8a;
     z-index: 10000;
     position: relative;
 }
@@ -127,7 +131,7 @@ a {
 
 .header {
     position: fixed;
-    background-color: aquamarine;
+    background-color: #5a98c0;
     height: 113px;
     width: 100%;
     display: flex;
@@ -154,7 +158,7 @@ a {
 .butt_1 {
     border: 2px solid gray;
     border-radius: 10px;
-    background-color: #caffed;
+    background-color: rgb(165, 223, 239);
     width: 200px;
     height: 40px;
     font-size: 20pt;
@@ -164,7 +168,7 @@ a {
 .butt_2 {
     border: 2px solid gray;
     border-radius: 10px;
-    background-color: #caffed;
+    background-color: rgb(165, 223, 239);
     width: 200px;
     height: 40px;
     margin-left: 1%;
@@ -173,7 +177,7 @@ a {
 .butt_3 {
     border: 2px solid gray;
     border-radius: 10px;
-    background-color: #caffed;
+    background-color: rgb(165, 223, 239);
     width: 200px;
     height: 40px;
     margin-left: 1%;
@@ -213,7 +217,7 @@ a {
 .gotop {
     width: 60px;
     height: 70px;
-    color: rebeccapurple;
+    color: orange;
     position: fixed;
     margin-left: 2.5%;
     margin-top: 400px;
@@ -224,19 +228,20 @@ a {
 }
 
 .callb_wind {
-    width: 620px;
-    height: 620px;
-    background-color: aquamarine;
+    width: 701px;
+    height: 630px;
+    background-color: #5a98c0;;
     z-index: 5000;
     transform: scale(0, 0);
     transition: all 0.5s ease-out 0s;
     text-align: center;
-    
+    opacity: 0.9;
     position:fixed;
     top: 10%;
     left: 0;
     right: 0;
     margin: 0 auto;
+    margin-left: 30%;
 }
 
 .callb_wind_bg {
@@ -250,7 +255,7 @@ a {
 }
 
 .close_wind {
-    color:red;
+    color:#006680;
     font-weight:bold;
     font-size: 22pt;
     margin-left: 590px;
@@ -271,7 +276,7 @@ a {
 .load_bg {
     width: 100%;
     height: 2000px;
-    background-color: aqua;
+    background-color: #5a98c0;
     display: block;
     transition: all 0.5s ease-out 0s;
     opacity: 1;
@@ -300,4 +305,186 @@ a {
 .call_back_message {
     width: 500px;
     font-size: 22pt;
+}
+
+
+
+.cssload-thecube {
+	width: 73px;
+	height: 73px;
+	margin: 0 auto;
+	margin-top: 49px;
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+}
+.cssload-thecube .cssload-cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(224,244,255);
+	animation: cssload-fold-thecube 2.76s infinite linear both;
+		-o-animation: cssload-fold-thecube 2.76s infinite linear both;
+		-ms-animation: cssload-fold-thecube 2.76s infinite linear both;
+		-webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+		-moz-animation: cssload-fold-thecube 2.76s infinite linear both;
+	transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+}
+.cssload-thecube .cssload-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+		-o-transform: scale(1.1) rotateZ(90deg);
+		-ms-transform: scale(1.1) rotateZ(90deg);
+		-webkit-transform: scale(1.1) rotateZ(90deg);
+		-moz-transform: scale(1.1) rotateZ(90deg);
+}
+.cssload-thecube .cssload-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+		-o-transform: scale(1.1) rotateZ(180deg);
+		-ms-transform: scale(1.1) rotateZ(180deg);
+		-webkit-transform: scale(1.1) rotateZ(180deg);
+		-moz-transform: scale(1.1) rotateZ(180deg);
+}
+.cssload-thecube .cssload-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+		-o-transform: scale(1.1) rotateZ(270deg);
+		-ms-transform: scale(1.1) rotateZ(270deg);
+		-webkit-transform: scale(1.1) rotateZ(270deg);
+		-moz-transform: scale(1.1) rotateZ(270deg);
+}
+.cssload-thecube .cssload-c2:before {
+	animation-delay: 0.35s;
+		-o-animation-delay: 0.35s;
+		-ms-animation-delay: 0.35s;
+		-webkit-animation-delay: 0.35s;
+		-moz-animation-delay: 0.35s;
+}
+.cssload-thecube .cssload-c3:before {
+	animation-delay: 0.69s;
+		-o-animation-delay: 0.69s;
+		-ms-animation-delay: 0.69s;
+		-webkit-animation-delay: 0.69s;
+		-moz-animation-delay: 0.69s;
+}
+.cssload-thecube .cssload-c4:before {
+	animation-delay: 1.04s;
+		-o-animation-delay: 1.04s;
+		-ms-animation-delay: 1.04s;
+		-webkit-animation-delay: 1.04s;
+		-moz-animation-delay: 1.04s;
+}
+
+
+
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-o-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-o-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-o-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-ms-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-ms-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-ms-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-webkit-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-webkit-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-webkit-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-moz-transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-moz-transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-moz-transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
 }

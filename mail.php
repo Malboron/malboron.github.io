@@ -17,7 +17,7 @@
       $mail = trim(strip_tags($_POST['mail']));
       $message = trim(strip_tags($_POST['message']));
  
-      mail('extrafeik4@mail.ru', 'Письмо от Монтаж Мастер', 
+      mail('montazh-master@inbox.ru', 'Письмо от Монтаж Мастер', 
       'Вам написал: '.$name.'<br />Его номер: '.$phone.'<br />Его почта: '.$mail.'<br />
       Его сообщение: '.$message,"Content-type:text/html;charset=windows-1251");
  
