@@ -310,10 +310,10 @@ a {
 
 
 .cssload-thecube {
-	width: 73px;
-	height: 73px;
+	width: 113px;
+	height: 113px;
 	margin: 0 auto;
-	margin-top: 49px;
+	margin-top: 75px;
 	position: relative;
 	transform: rotateZ(45deg);
 		-o-transform: rotateZ(45deg);
@@ -347,7 +347,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(224,244,255);
+	background-color: rgb(235,246,255);
 	animation: cssload-fold-thecube 2.76s infinite linear both;
 		-o-animation: cssload-fold-thecube 2.76s infinite linear both;
 		-ms-animation: cssload-fold-thecube 2.76s infinite linear both;
@@ -406,85 +406,85 @@ a {
 
 @keyframes cssload-fold-thecube {
 	0%, 10% {
-		transform: perspective(136px) rotateX(-180deg);
+		transform: perspective(210px) rotateX(-180deg);
 		opacity: 0;
 	}
 	25%,
 				75% {
-		transform: perspective(136px) rotateX(0deg);
+		transform: perspective(210px) rotateX(0deg);
 		opacity: 1;
 	}
 	90%,
 				100% {
-		transform: perspective(136px) rotateY(180deg);
+		transform: perspective(210px) rotateY(180deg);
 		opacity: 0;
 	}
 }
 
 @-o-keyframes cssload-fold-thecube {
 	0%, 10% {
-		-o-transform: perspective(136px) rotateX(-180deg);
+		-o-transform: perspective(210px) rotateX(-180deg);
 		opacity: 0;
 	}
 	25%,
 				75% {
-		-o-transform: perspective(136px) rotateX(0deg);
+		-o-transform: perspective(210px) rotateX(0deg);
 		opacity: 1;
 	}
 	90%,
 				100% {
-		-o-transform: perspective(136px) rotateY(180deg);
+		-o-transform: perspective(210px) rotateY(180deg);
 		opacity: 0;
 	}
 }
 
 @-ms-keyframes cssload-fold-thecube {
 	0%, 10% {
-		-ms-transform: perspective(136px) rotateX(-180deg);
+		-ms-transform: perspective(210px) rotateX(-180deg);
 		opacity: 0;
 	}
 	25%,
 				75% {
-		-ms-transform: perspective(136px) rotateX(0deg);
+		-ms-transform: perspective(210px) rotateX(0deg);
 		opacity: 1;
 	}
 	90%,
 				100% {
-		-ms-transform: perspective(136px) rotateY(180deg);
+		-ms-transform: perspective(210px) rotateY(180deg);
 		opacity: 0;
 	}
 }
 
 @-webkit-keyframes cssload-fold-thecube {
 	0%, 10% {
-		-webkit-transform: perspective(136px) rotateX(-180deg);
+		-webkit-transform: perspective(210px) rotateX(-180deg);
 		opacity: 0;
 	}
 	25%,
 				75% {
-		-webkit-transform: perspective(136px) rotateX(0deg);
+		-webkit-transform: perspective(210px) rotateX(0deg);
 		opacity: 1;
 	}
 	90%,
 				100% {
-		-webkit-transform: perspective(136px) rotateY(180deg);
+		-webkit-transform: perspective(210px) rotateY(180deg);
 		opacity: 0;
 	}
 }
 
 @-moz-keyframes cssload-fold-thecube {
 	0%, 10% {
-		-moz-transform: perspective(136px) rotateX(-180deg);
+		-moz-transform: perspective(210px) rotateX(-180deg);
 		opacity: 0;
 	}
 	25%,
 				75% {
-		-moz-transform: perspective(136px) rotateX(0deg);
+		-moz-transform: perspective(210px) rotateX(0deg);
 		opacity: 1;
 	}
 	90%,
 				100% {
-		-moz-transform: perspective(136px) rotateY(180deg);
+		-moz-transform: perspective(210px) rotateY(180deg);
 		opacity: 0;
 	}
 }
