@@ -121,10 +121,8 @@ a {
     height: 113px;
     background-color: #212121;
     border: 7px solid #3c4159;
-    text-align: center;
-    font-size: 18pt;
+    font-size: 15pt;
     color: #8a8a8a;
-    z-index: 10000;
     position: relative;
 }
 
@@ -142,7 +140,8 @@ a {
 }
 
 .t_footer {
-    margin-top:1.5%;
+    margin-top:1%;
+    text-align: center;
 }
 
 .margin_1 {
@@ -222,7 +221,7 @@ a {
     height: 70px;
     color: orange;
     position: fixed;
-    margin-left: 90%;
+    margin-left: 85%;
     margin-top: 35%;
     z-index: 1000;
     visibility: hidden;
@@ -501,6 +500,11 @@ a {
     display: flex;
     height: 500px;
     margin-top: -28px;
+    width: 85%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .const {
@@ -514,36 +518,6 @@ a {
     min-width:33%;
     height: 550px;
     vertical-align: middle;
-}
-@media screen and (max-width: 1359px) {
-    .butt_1 {display: none;}
-    .butt_2 {display: none;}
-    .butt_3 {display: none;}
-    .callback {margin-left: 60%; margin-top: -7%;}
-    .wrapper1{margin-left: 20%;}
-    .t_akcii_callme{font-size: 40pt;}
-    .slogan{font-size: 28pt;}
-}
-
-
-@media screen and (max-width: 991px) {
-    .const {height: 400px;}
-    .wrapper1{margin-left: 10%;}
-    .t_akcii_callme{font-size: 42pt;}
-    .t_zamer{font-size: 42pt;}
-    .t_otherworks{font-size: 42pt;}
-    .t_footer{font-size: 16pt;}
-    .callback {margin-left: 2%; margin-top: -1%;}
-    .constructs{margin-top: 100px;}
-
-}
-
-@media screen and (max-width: 720px) {
-    .constructs{margin-top: 100px;}
-    .callback {margin-left: 0%; margin-top: 0%;}
-    .wrapper1{margin-left: -6%;}
-    .t_akcii_callme{font-size: 40pt;}
-
 }
 
 .in-const {
@@ -562,6 +536,59 @@ a {
 
 .slogan {
     color: white;
-    font-size: 30pt;
+    font-size: 42pt;
     text-shadow: black 0 0 5px;
+}
+
+@media screen and (max-width: 1800px) {
+    .footer{height: 200px;}
+    .slogan {font-size: 38pt;}
+}
+
+
+@media screen and (max-width: 1359px) {
+    .butt_1 {display: none;}
+    .butt_2 {display: none;}
+    .butt_3 {display: none;}
+    .callback {margin-left: 60%; margin-top: -7%;}
+    .wrapper1{margin-left: 20%;}
+    .t_akcii_callme{font-size: 40pt;}
+    .slogan{font-size: 32pt;}
+}
+
+
+@media screen and (max-width: 991px) {
+    .const {height: 500px;}
+    .wrapper1{margin-left: 10%;}
+    .t_akcii_callme{font-size: 42pt;}
+    .t_zamer{font-size: 42pt;}
+    .t_otherworks{font-size: 42pt;}
+    .t_footer{font-size: 16pt;}
+    .callback {margin-left: 2%; margin-top: -1%;}
+    .constructs{margin-top: 100px;}
+    .slogan{font-size: 26pt;}
+}
+
+@media screen and (max-width: 720px) {
+    .constructs{margin-top: 100px;}
+    .callback {margin-left: 0%; margin-top: 0%;}
+    .wrapper1{margin-left: -6%;}
+    .t_akcii_callme{font-size: 40pt;}
+    .slogan{font-size: 24pt;}
+}
+
+@media screen and (max-width: 640px) {
+    .callback{font-size: 16pt; width: 95%; height: 70px;}
+    .t_otherworks{font-size: 34pt; margin-top: -680px;}
+    .t_zamer{font-size: 36pt;}
+    .t_akcii_callme{font-size: 34pt;}
+    .const{font-size: 16pt; height: 300px;}
+    .constructs{padding-left: 10px; padding-right: 30px;}
+    .slogan{font-size: 22pt;}
+    .in-cinst-img{margin-left: 0%}
+    .close_wind{margin-left: 400px;}
+}
+
+.npo {
+    font-size: 10pt;
 }
