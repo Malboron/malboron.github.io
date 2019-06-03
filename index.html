@@ -29,18 +29,18 @@
        <div class="close_wind">X</div>
        <form method="post" action="mail.php">
            <div class="user_contacts">
-              <label style="font-size: 22pt; text-align: center; margin-top:-20px;" for="name">Имя:</label><br>
+              <label style=" text-align: center; margin-top:-20px;" for="name">Имя:</label><br>
               <input class="call_back_inputs" maxlength="25" type="text" name="name" />
                 <br>
-              <label style="font-size: 22pt; text-align: center;" for="phone">Телефон:</label><br>
+              <label style=" text-align: center;" for="phone">Телефон:</label><br>
               <input class="call_back_inputs" maxlength="25" type="text" name="phone" />
                 <br>
-              <label style="font-size: 22pt; text-align: center;" for="mail">E-mail:</label><br>
+              <label style=" text-align: center;" for="mail">E-mail:</label><br>
               <input class="call_back_inputs" maxlength="25" type="text" name="mail" />
                 <br>
             </div>
-              <label style="font-size: 22pt; text-align: center;" for="message">Сообщение:</label><br>
-              <textarea class="call_back_message" rows="3" cols="20" name="message"></textarea>
+              <label style=" text-align: center;" for="message">Сообщение:</label><br>
+              <textarea class="call_back_message" rows="2" cols="20" name="message"></textarea>
               <br>
               <input style="width: 200px; height: 80px;" type="submit" value="Отправить"/>
         </form>
@@ -48,15 +48,18 @@
     <div class="header">
         <div class="container">
             <div class="wrapper1">
-                <img src="images/LogoMM6test.png" style="width: auto; height: 113px;">
+                <img src="images/LogoMM6test.png" class="logo">
                 <div class="t_header" id="textheader">
                     <div id="b1" class="butt_1"><a >Конструкции</a></div>
                     <div id="b2" class="butt_2"><a >Акции</a></div>
                     <div id="b3" class="butt_3"><a >Замер</a></div>
-                    <div id="callb" class="callback">Заказать звонок</div>
+                    <div id="callb" class="callback">
+                        <div class="t_callb">Заказать звонок</div>
+                    </div>
+                    <div class="callb-img">
+                        <img src="images/phone.png" class="callb-img">
+                    </div>
                 </div>
-                
-                
             </div>
         </div>
     </div>
@@ -64,7 +67,6 @@
         <div class="gotop_t">^</div>
     </div>
     <div id="parall" class="parallax">
-        
         <div class="window">
             <img src="images/3.png">
             <div class="slogan">Мы занимаемся установкой пластиковых окон</div>

@@ -97,6 +97,12 @@ window.onload = function(){
             },2500);
          })
         
+        $('.callb-img').click(function(){ 
+            $(".callb_wind_bg").css( "display", "block" );
+            $(".callb_wind").css('transform','scale(1,1)');
+            $('body,html').css( "overflow", "hidden" );
+         })
+        
         //вызов окна заказа обратног звонка
         $("#callb").click(function(){ 
             $(".callb_wind_bg").css( "display", "block" );

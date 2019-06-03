@@ -7,7 +7,8 @@ a {
    }
 
 .parallax {
-    background: url(images/fon2.jpg)  repeat-x;
+    background: url(images/fon2.jpg) 100% 100% no-repeat;
+    background-size: cover;
     width: 100%;
     height: 500px;
     background-size: 100%;
@@ -214,6 +215,9 @@ a {
     top: 120px;
     z-index: 100;
     position: relative;
+    max-width: 100%; 
+    height: auto;
+
 }
 
 .gotop {
@@ -244,7 +248,7 @@ a {
     position:fixed;
     top: 4%;
     margin: 0 auto;
-    
+    font-size: 22pt;
 }
 
 .callb_wind_bg {
@@ -540,6 +544,27 @@ a {
     text-shadow: black 0 0 5px;
 }
 
+.npo {
+    font-size: 10pt;
+}
+
+.callb-img {
+    display: none;
+    float: left; 
+    margin-left: 10px; 
+    margin-right: 10px;
+    width: 70px; 
+    height: 70px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.logo {
+    width: auto; 
+    height: 113px;
+    background-size: cover;
+}
+
 @media screen and (max-width: 1800px) {
     .footer{height: 200px;}
     .slogan {font-size: 38pt;}
@@ -590,6 +615,19 @@ a {
     .t_footer{font-size: 14pt;}
 }
 
-.npo {
-    font-size: 10pt;
+@media screen and (max-width: 480px) {
+    .callb-img{display: block;}
+    .callback{display: none;}
+    .wrapper1{display: block;}
+    .t_otherworks{font-size: 30pt;}
+    .t_zamer{font-size: 30pt;}
+    .t_akcii_callme{font-size: 30pt;}
+    .gotop{margin-left: 75%}
+    .const{font-size: 11pt; height: 206px; width: 50%}
+    .npo{font-size: 8pt;}
+    .slogan{font-size: 13pt;}
+    .parallax{height: 435px;}
+    .logo{margin-left: -2%;}
+    .close_wind{margin-left: 280px;}
+    .callb_wind{font-size: 16pt;}
 }
