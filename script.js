@@ -16,6 +16,7 @@ window.onload = function(){
     window.onscroll = function() { 
         var scrolled = window.pageYOffset;
         parall.style.backgroundPosition="0px "+scrolled+"px";
+        
     }
     
     
@@ -24,7 +25,8 @@ window.onload = function(){
     
     $(document).ready(function(){
         //прокрутка до первого якоря
-        $("#b1").click(function(){ 
+        $("#b1").click(function(){
+
             $("html").animate({
                 scrollTop: "388px"
             }, 500 );
@@ -32,13 +34,15 @@ window.onload = function(){
         
         //прокрутка до второго якоря
         $("#b2").click(function(){ 
+
             $("html").animate({
             scrollTop: "1223px"
             }, 500 );
         });
         
         //прокрутка до третьего якоря
-        $("#b3").click(function(){ 
+        $("#b3").click(function(){
+
             $("html").animate({
             scrollTop: "2058px"
             }, 500 );
