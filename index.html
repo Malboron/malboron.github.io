@@ -4,6 +4,7 @@
     <title>Монтаж Мастер</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
+    <meta name="Keywords" content="Мотнаж мастер, купить собаку полхвоста"> 
     <link rel="stylesheet" href="main.css">
     <link rel="SHORTCUT ICON" href="images/ico.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,13 +13,12 @@
 <body style="margin: 0px;">
 <div class="load_bg" id="load_bg">
     <div class="load_info">
-   
         <div class="cssload-thecube">
-	<div class="cssload-cube cssload-c1"></div>
-	<div class="cssload-cube cssload-c2"></div>
-	<div class="cssload-cube cssload-c4"></div>
-	<div class="cssload-cube cssload-c3"></div>
-</div>
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+        </div>
         <br>
         <br>Загрузка,
         <br>пожалуйста, подождите...
@@ -27,23 +27,15 @@
   <div class="callb_wind_bg"></div>
    <div class="callb_wind" id="callb_wind">
        <div class="close_wind">X</div>
-       <form method="post" action="mail.php">
-           <div class="user_contacts">
-              <label style=" text-align: center; margin-top:-20px;" for="name">Имя:</label><br>
-              <input class="call_back_inputs" maxlength="25" type="text" name="name" />
-                <br>
-              <label style=" text-align: center;" for="phone">Телефон:</label><br>
-              <input class="call_back_inputs" maxlength="25" type="text" name="phone" />
-                <br>
-              <label style=" text-align: center;" for="mail">E-mail:</label><br>
-              <input class="call_back_inputs" maxlength="25" type="text" name="mail" />
-                <br>
-            </div>
-              <label style=" text-align: center;" for="message">Сообщение:</label><br>
-              <textarea class="call_back_message" rows="2" cols="20" name="message"></textarea>
-              <br>
-              <input style="width: 200px; height: 80px;" type="submit" value="Отправить"/>
-        </form>
+       <form method="post" id="ajax_form" action="" >
+        <input type="text" name="name" placeholder="Ваше имя" /><br><br>
+        <input type="tel" name="phonenumber" placeholder="Ваш телефон" /><br><br>
+        <input type="email" name="mail" placeholder="Ваша почта" /><br><br>
+        <input type="text" name="message" placeholder="Ваше сообшение" /><br><br>
+        <input type="button" id="btn" value="Отправить" />
+    </form>
+    <br>
+    <div id="result_form"></div> 
    </div>
     <div class="header">
         <div class="container">
@@ -51,8 +43,8 @@
                 <img src="images/LogoMM6test.png" class="logo">
                 <div class="t_header" id="textheader">
                     <div id="b1" class="butt_1"><a >Конструкции</a></div>
-                    <div id="b2" class="butt_2"><a >Акции</a></div>
-                    <div id="b3" class="butt_3"><a >Замер</a></div>
+                    <div id="b2" class="butt_2"><a >Замер</a></div>
+                    <div id="b3" class="butt_3"><a >Акции</a></div>
                     <div id="callb" class="callback">
                         <div class="t_callb">Заказать звонок</div>
                     </div>
@@ -68,44 +60,62 @@
     </div>
     <div id="parall" class="parallax">
         <div class="window">
-            <img src="images/3.png">
+            <img src="images/3.png" alt="Окна">
             <div class="slogan">Мы занимаемся установкой пластиковых окон</div>
         </div> 
     </div> 
-        <div class="otherworks">
+        <div id="otherworks" class="otherworks">
             <div class="margin_1" id="1"></div>
             <div class="bc_otherworks"></div>
             <div class="t_otherworks">Любые конструкции<br>Любой сложности</div>
             <div class="constructs">
                 <div class="const">
                     <div class="in-const">
-                        <img src="images/forms-2.png" class="in-cinst-img"><br><br>
+                        <img src="images/forms-2.png" class="in-const-img" alt="Арочное окно"><br><br>
                         Арочное<br><br>от 4590р.
                     </div>
                 </div>
                 <div class="const">
                     <div class="in-const">
-                        <img src="images/forms-3.png" class="in-cinst-img"><br><br>
-                        Треуго-<br>льное<br>от 3990р.
+                        <img src="images/forms-3.png" class="in-const-img" alt="Треугольное окно"><br><br>
+                        Треу-<br>гольное<br>от 3990р.
                     </div>
                 </div>
                 <div class="const">
                     <div class="in-const">
-                        <img src="images/forms-1.png" class="in-cinst-img"><br><br>
+                        <img src="images/forms-1.png" class="in-const-img" alt="Круглое окно"><br><br>
                         Круглое<br><br>от 5190р.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="zamer">
+        <div id="zamer" class="zamer">
             <div class="margin_1" id="3"></div>
             <div class="bc_zamer"></div>
-            <div class="t_zamer">Замеры по Барнаулу и Алтайскому краю БЕСПЛАТНО!</div> 
+            <div class="t_zamer">Замеры по Барнаулу и <br> Алтайскому краю БЕСПЛАТНО!</div> 
+            <div class="calculator">
+                <div class="t_calc">
+                    Подсчитайте примерную стоимость окна
+                </div>
+                <br>
+                <form>
+                    Ширина (мм)<br>
+                    <input type="number" id="wind_width" min="500" max="3000" name="wind_width" placeholder=""/><br><br>
+                    Высота (мм)<br>
+                    <input type="number" id="wind_height" min="500" max="3000" name="wind_height" placeholder=""/><br><br>
+                    Количество стеклопакетов (шт.)<br>
+                    <input type="number" id="wind_packs" min="1" max="3" width="300" name="wind_packs" placeholder=""/><br><br>
+                    <input type="button" id="wind_calc_btn" value="Посчитать"/><br><br>
+                    <div class="price" id="price">Цена: ~ 0 руб.</div>
+                </form>
+            </div>    
         </div> 
-        <div class="callme">
+        <div id="callme" class="callme">
             <div class="margin_1" id="2"></div>
             <div class="bc_callme"></div>
-            <div class="t_akcii_callme"><b>Акции!!!</b><br><br>Закажи установку трех окон<br>и получи скидку 20% на четвертое<br><br>Подробнее по телефону:<br>8(983)177-87-77</div> 
+            <div class="t_akcii_callme">
+                <b>Акции!!!</b><br><br>Закажи установку трех окон<br>и получи скидку 20% на четвертое<br><br>Подробнее по телефону:<br>8(983)177-87-77
+            </div>
         </div>
         <div class="ya_map">
             <div class="bc_ya_map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A709558744afc58ffdb009e7cbb2a470f9eae9aa6b866293e357294f324d15ae1&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe></div>
@@ -122,6 +132,7 @@
 
         </div>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>   
+    <script type="text/javascript" src="script.js"></script>  
+    <script src="ajax.js"></script>
 </body> 
 </html>

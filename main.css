@@ -28,7 +28,7 @@ a {
     background: url(images/valkenburg-272472.jpg);
     background-repeat: repeat;
     width: 100%;
-    height: 800px;
+    height: 835px;
     background-size: 100%;
     border: 5px solid #3c4159;
     z-index: 100;
@@ -46,7 +46,7 @@ a {
 
 .t_otherworks {
     text-align: center;
-    color: #7dc2d1;
+    color: white;
     font-size: 60pt;
     margin-top: -790px;
     text-shadow: black 0 0 10px;
@@ -56,7 +56,7 @@ a {
     background: url(images/support-1120755_1920.jpg)  no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 800px;
+    height: 835px;
     background-size: 100%;
     background-position: bottom;
     border: 5px solid #3c4159;
@@ -75,7 +75,7 @@ a {
 
 .t_akcii_callme {
     text-align: center;
-    color: #7dc2d1;
+    color: white;
     font-size: 55pt;
     margin-top: -790px;
     text-shadow: black 0 0 10px;
@@ -83,7 +83,7 @@ a {
 .zamer {
     background: url(images/metal-ruler-2765212.jpg)  no-repeat;
     width: 100%;
-    height: 400px;
+    height: 835px;
     background-size: 100%;
     background-position: bottom;
     border: 5px solid #3c4159;
@@ -101,9 +101,9 @@ a {
 
 .t_zamer {
     text-align: center;
-    color: #7dc2d1;
+    color: white;
     font-size: 60pt;
-    margin-top: -350px;
+    margin-top: -790px;
     text-shadow: black 0 0 10px;
 }
 
@@ -159,32 +159,47 @@ a {
 }
 
 .butt_1 {
-    border: 2px solid gray;
     border-radius: 10px;
     background-color: rgb(165, 223, 239);
     width: 230px;
     height: 45px;
     font-size: 20pt;
     cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.2s ease-out 0s;
+}
+
+.butt_1:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
 }
 
 .butt_2 {
-    border: 2px solid gray;
     border-radius: 10px;
     background-color: rgb(165, 223, 239);
     width: 170px;
     height: 45px;
     margin-left: 1%;
     cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.2s ease-out 0s;
+}
+
+.butt_2:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
 }
 .butt_3 {
-    border: 2px solid gray;
     border-radius: 10px;
     background-color: rgb(165, 223, 239);
     width: 170px;
     height: 45px;
     margin-left: 1%;
     cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.2s ease-out 0s;
+}
+
+.butt_3:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
 }
 .margin_2 {
     margin-top: -128px;
@@ -193,14 +208,20 @@ a {
 .callback {
     width: 230px;
     height: 90px; 
-    border: 2px solid gray;
     background-color: azure;
     border-radius: 10px;
     font-size: 22pt;
     text-align: center;
-    margin-top: -2%;
+    margin-top: -3%;
     margin-left: 3%;
     cursor: pointer;
+    transition: all 0.5s ease-out 0s;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.2s ease-out 0s;
+}
+
+.callback:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
 }
 .wrapper1 {
     display: flex;
@@ -225,8 +246,8 @@ a {
     height: 70px;
     color: orange;
     position: fixed;
-    margin-left: 85%;
-    margin-top: 35%;
+    margin-left: 3%;
+    margin-top: 43%;
     z-index: 1000;
     visibility: hidden;
     font-size: 80pt;
@@ -522,6 +543,8 @@ a {
     min-width:33%;
     height: 550px;
     vertical-align: middle;
+    display: none;
+    
 }
 
 .in-const {
@@ -530,13 +553,82 @@ a {
     margin-right: 5%;
 }
 
-.in-cinst-img {
+
+.in-const-img {
     float: left; 
     margin-left: 10px; 
     max-width: 100%; 
     height: auto;
     margin-top:18%; 
 }
+
+.in-const-img:hover {
+    -webkit-animation: 0.15s tremor ease-out infinite;  
+    animation: 0.15s tremor ease-out infinite;    
+}
+@-webkit-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        top:-1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@-moz-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@-ms-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@-o-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+
 
 .slogan {
     color: white;
@@ -565,6 +657,18 @@ a {
     background-size: cover;
 }
 
+
+.calculator {
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: black 0 0 5px;
+}
+
+.t_calc {
+    margin-top: 1%;
+}
+
 @media screen and (max-width: 1800px) {
     .footer{height: 200px;}
     .slogan {font-size: 38pt;}
@@ -572,17 +676,15 @@ a {
 
 
 @media screen and (max-width: 1359px) {
-    .butt_1 {display: none;}
-    .butt_2 {display: none;}
-    .butt_3 {display: none;}
-    .callback {margin-left: 60%; margin-top: -7%;}
-    .wrapper1{margin-left: 20%;}
+    
+    .callback {margin-left: 2%; margin-top: -3%; font-size: 16pt; width: 24%; height: 70px;}
+    .wrapper1{margin-left: -6%;}
     .t_akcii_callme{font-size: 40pt;}
     .slogan{font-size: 32pt;}
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1080px) {
     .const {height: 500px;}
     .wrapper1{margin-left: 10%;}
     .t_akcii_callme{font-size: 42pt;}
@@ -590,16 +692,23 @@ a {
     .t_otherworks{font-size: 42pt;}
     .t_footer{font-size: 16pt;}
     .callback {margin-left: 2%; margin-top: -1%;}
+    .callback{font-size: 16pt; width: 95%; height: 70px;}
     .constructs{margin-top: 100px;}
     .slogan{font-size: 26pt;}
+    .butt_1 {display: none;}
+    .butt_2 {display: none;}
+    .butt_3 {display: none;}
+    .load_info {top: 100px;}
 }
 
 @media screen and (max-width: 720px) {
+    .callback{font-size: 16pt; width: 95%; height: 70px;}
     .constructs{margin-top: 100px;}
     .callback {margin-left: 0%; margin-top: 0%;}
     .wrapper1{margin-left: -6%;}
     .t_akcii_callme{font-size: 40pt;}
     .slogan{font-size: 24pt;}
+    .load_info {top: 50px;}
 }
 
 @media screen and (max-width: 640px) {
@@ -610,9 +719,10 @@ a {
     .const{font-size: 16pt; height: 300px;}
     .constructs{padding-left: 10px; padding-right: 30px;}
     .slogan{font-size: 22pt;}
-    .in-cinst-img{margin-left: 0%}
+    .in-const-img{margin-left: 0%}
     .close_wind{margin-left: 400px;}
     .t_footer{font-size: 14pt;}
+    .load_info {top: 20px;}
 }
 
 @media screen and (max-width: 480px) {
@@ -622,12 +732,32 @@ a {
     .t_otherworks{font-size: 30pt;}
     .t_zamer{font-size: 30pt;}
     .t_akcii_callme{font-size: 30pt;}
-    .gotop{margin-left: 75%}
+    .gotop{margin-left: 75%; margin-top: 37%;}
+    .callb_wind {font-size: 12pt;}
     .const{font-size: 11pt; height: 206px; width: 50%}
-    .npo{font-size: 8pt;}
+    .npo{font-size: 7pt;}
     .slogan{font-size: 13pt;}
     .parallax{height: 435px;}
     .logo{margin-left: -2%;}
     .close_wind{margin-left: 280px;}
     .callb_wind{font-size: 16pt; transition: all 0.2s ease-out 0s;}
+    .load_info {top: 10px;}
+    .calculator{font-size: 14pt;}
 }
+#wind_width {
+    width: 300px;
+}
+
+#wind_height {
+    width: 300px;
+}
+
+#wind_packs {
+    width: 300px;
+}
+
+#wind_calc_btn:hover {
+    cursor: pointer;
+}
+
+

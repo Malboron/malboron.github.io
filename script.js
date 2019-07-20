@@ -23,7 +23,6 @@ window.onload = function(){
     
     
     $(document).ready(function(){
-        
         //прокрутка до первого якоря
         $("#b1").click(function(){ 
             $("html").animate({
@@ -34,19 +33,28 @@ window.onload = function(){
         //прокрутка до второго якоря
         $("#b2").click(function(){ 
             $("html").animate({
-            scrollTop: "1188px"
+            scrollTop: "1223px"
             }, 500 );
         });
         
         //прокрутка до третьего якоря
         $("#b3").click(function(){ 
             $("html").animate({
-            scrollTop: "1588px"
+            scrollTop: "2058px"
             }, 500 );
         });
+        function moveItem() {
+            callb.style.backgroundColor="#7ff";
+            setTimeout(function() {
+                callb.style.backgroundColor="azure";
+            }, 500);
+        }
+
+        setInterval(moveItem, 5000);
+        
         $(window).scroll(function(){
             var scrolled = window.pageYOffset;
-            console.log(window.pageYOffset);
+
                 // анимация появления и исчезновения кнопки автопрокрутки вверх
                 if((window.pageYOffset)>100){ 
                     $('.gotop').show(300);
@@ -55,14 +63,13 @@ window.onload = function(){
                 else{
                     $('.gotop').hide(300);
                 }
-            
             //изменение цвета кнопок якорей
             if((window.pageYOffset)<387){ 
                 var scrolled = window.pageYOffset;
                 $("#b1").css('backgroundColor','rgb(165, 223, 239)');
                 $("#b2").css('backgroundColor','rgb(165, 223, 239)');
                 $("#b3").css('backgroundColor','rgb(165, 223, 239)');
-
+                
             }
             
             //изменение цвета кнопок якорей
@@ -71,11 +78,11 @@ window.onload = function(){
                 $("#b1").css('backgroundColor','rgb(97, 182, 236)');
                 $("#b2").css('backgroundColor','rgb(165, 223, 239)');
                 $("#b3").css('backgroundColor','rgb(165, 223, 239)');
-
+                $('.const').show(1000);
             }
             
             //изменение цвета кнопок якорей
-            if((window.pageYOffset)>=1185){
+            if((window.pageYOffset)>=1223){
                 var scrolled = window.pageYOffset;
                 $("#b2").css('backgroundColor','rgb(97, 182, 236)');
                 $("#b1").css('backgroundColor','rgb(165, 223, 239)');
@@ -83,7 +90,7 @@ window.onload = function(){
             }
             
             //изменение цвета кнопок якорей
-            if((window.pageYOffset)>=1585){
+            if((window.pageYOffset)>=2058){
                 $("#b3").css('backgroundColor','rgb(97, 182, 236)');
                 $("#b2").css('backgroundColor','rgb(165, 223, 239)');
                 $("#b1").css('backgroundColor','rgb(165, 223, 239)');
@@ -123,5 +130,13 @@ window.onload = function(){
             $(".callb_wind").css('transform','scale(0,0)');
             $('body,html').css( "overflow", "visible" );
         });
+    });
+    
+    
+    $("#wind_calc_btn").click(function(){ 
+        $total=wind_width.value*wind_height.value*wind_packs.value*1.3*0.0012;
+        if(($total>=0)&&($total<42120)){
+            price.innerHTML = "Цена: ~ "+Math.ceil($total)+" руб.";
+        }
     });
 }
