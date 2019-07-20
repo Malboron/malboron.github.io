@@ -255,6 +255,7 @@ a {
     background-color: cornflowerblue;
     border-radius: 35px;
     opacity: 0.9;
+    box-shadow: 20px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .callb_wind {
@@ -544,7 +545,7 @@ a {
     height: 550px;
     vertical-align: middle;
     display: none;
-    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .in-const {
