@@ -4,24 +4,24 @@
 "name": "Монтаж Мастер",
 "scope": "/",
 "display": "standalone",
-"start_url": "https://shterkel.com/",
-"short_name": "SEO",
+"start_url": "https://malboron.github.io/",
+"short_name": "Монтаж Мастер",
 "description": "Сайт монтажной компании Монтаж Мастер",
 "orientation": "any",
-"background_color": "#fafafa",
-"theme_color": "#fafafa",
+"background_color": "#5a98c0",
+"theme_color": "#5383a2",
 "related_applications": [],
 "prefer_related_applications": false,
 "icons": [
 {
-"src": "/images/ico.ico",
-"type": "image/ico",
-"sizes": "57x57"
+"src": "/images/logo.png",
+"type": "image/png",
+"sizes": "94x93"
 },
 {
-"src": "/images/ico.ico",
-"sizes": "48x48",
-"type": "image/ico"
+"src": "/images/logo.png",
+"sizes": "94x93",
+"type": "image/png"
 }
 ]
 }
