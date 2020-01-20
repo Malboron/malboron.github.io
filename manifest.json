@@ -20,8 +20,8 @@
 "sizes": "94x93"
 },
 {
-"src": "/images/android-icon-48x48.png",
-"sizes": "48x48",
+"src": "/images/android-icon-320x320.png",
+"sizes": "320x320",
 "type": "image/png"
 }
 ]
